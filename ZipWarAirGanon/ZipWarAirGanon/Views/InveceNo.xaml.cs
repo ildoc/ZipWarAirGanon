@@ -2,9 +2,9 @@
 
 namespace ZipWarAirGanon.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class InveceNo : ContentPage
     {
-        public MainPage()
+        public InveceNo()
         {
             InitializeComponent();
         }

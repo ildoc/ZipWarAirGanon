@@ -35,25 +35,138 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="Classes\PageNames.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\MainPageViewModel.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="App.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
+    <Compile Include="ViewModels\Abstracts\BaseViewModel.cs" />
+    <Compile Include="ViewModels\Abstracts\SingleButtonViewModel.cs" />
+    <Compile Include="ViewModels\Abstracts\ThreeButtonViewModel.cs" />
+    <Compile Include="ViewModels\Abstracts\TwoButtonViewModel.cs" />
+    <Compile Include="ViewModels\AdobeSuiteViewModel.cs" />
+    <Compile Include="ViewModels\AllertaUfficiViewModel.cs" />
+    <Compile Include="ViewModels\AnonimatoGarantitoViewModel.cs" />
+    <Compile Include="ViewModels\CheckMafiosiViewModel.cs" />
+    <Compile Include="ViewModels\ChiamaTecniciViewModel.cs" />
+    <Compile Include="ViewModels\CrossCheckingViewModel.cs" />
+    <Compile Include="ViewModels\DecurtamentoSVG4ViewModel.cs" />
+    <Compile Include="ViewModels\FanculoComplottoViewModel.cs" />
+    <Compile Include="ViewModels\FiguriamociViewModel.cs" />
+    <Compile Include="ViewModels\InveceNoViewModel.cs" />
+    <Compile Include="ViewModels\InveceSiViewModel.cs" />
+    <Compile Include="ViewModels\LastViewModel.cs" />
+    <Compile Include="ViewModels\MeravigliosoCrossCheckingViewModel.cs" />
+    <Compile Include="ViewModels\NonVeroViewModel.cs" />
+    <Compile Include="ViewModels\NoPassaportiViewModel.cs" />
+    <Compile Include="ViewModels\OcchialiETutaViewModel.cs" />
+    <Compile Include="ViewModels\PostoGiustoViewModel.cs" />
+    <Compile Include="ViewModels\RestituireBeniViewModel.cs" />
+    <Compile Include="ViewModels\RifarePassaportiViewModel.cs" />
+    <Compile Include="ViewModels\RiprovaUscitaViewModel.cs" />
+    <Compile Include="ViewModels\RitiroPassaportiViewModel.cs" />
+    <Compile Include="ViewModels\SequestroCapitaliViewModel.cs" />
+    <Compile Include="ViewModels\SottoControlloViewModel.cs" />
+    <Compile Include="ViewModels\StartViewModel.cs" />
+    <Compile Include="ViewModels\TastiACasaccioViewModel.cs" />
+    <Compile Include="ViewModels\TuttoOnlineViewModel.cs" />
+    <Compile Include="ViewModels\UscitaPoliticiViewModel.cs" />
+    <Compile Include="ViewModels\ValutazioneBeniViewModel.cs" />
+    <Compile Include="ViewModels\Vedi740DecurtataViewModel.cs" />
+    <Compile Include="ViewModels\Vedi740ViewModel.cs" />
+    <Compile Include="Views\AdobeSuite.xaml.cs">
+      <DependentUpon>AdobeSuite.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AllertaUffici.xaml.cs">
+      <DependentUpon>AllertaUffici.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AnonimatoGarantito.xaml.cs">
+      <DependentUpon>AnonimatoGarantito.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CheckMafiosi.xaml.cs">
+      <DependentUpon>CheckMafiosi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ChiamaTecnici.xaml.cs">
+      <DependentUpon>ChiamaTecnici.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DecurtamentoSVG4.xaml.cs">
+      <DependentUpon>DecurtamentoSVG4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FanculoComplotto.xaml.cs">
+      <DependentUpon>FanculoComplotto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Figuriamoci.xaml.cs">
+      <DependentUpon>Figuriamoci.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InveceNo.xaml.cs">
+      <DependentUpon>InveceNo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InveceSi.xaml.cs">
+      <DependentUpon>InveceSi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Last.xaml.cs">
+      <DependentUpon>Last.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MeravigliosoCrossChecking.xaml.cs">
+      <DependentUpon>MeravigliosoCrossChecking.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NonVero.xaml.cs">
+      <DependentUpon>NonVero.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NoPassaporti.xaml.cs">
+      <DependentUpon>NoPassaporti.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OcchialiETuta.xaml.cs">
+      <DependentUpon>OcchialiETuta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PostoGiusto.xaml.cs">
+      <DependentUpon>PostoGiusto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RestituireBeni.xaml.cs">
+      <DependentUpon>RestituireBeni.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RifarePassaporti.xaml.cs">
+      <DependentUpon>RifarePassaporti.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RiprovaUscita.xaml.cs">
+      <DependentUpon>RiprovaUscita.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RitiroPassaporti.xaml.cs">
+      <DependentUpon>RitiroPassaporti.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SequestroCapitali.xaml.cs">
+      <DependentUpon>SequestroCapitali.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SottoControllo.xaml.cs">
+      <DependentUpon>SottoControllo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TastiACasaccio.xaml.cs">
+      <DependentUpon>TastiACasaccio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TuttoOnline.xaml.cs">
+      <DependentUpon>TuttoOnline.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UscitaPolitici.xaml.cs">
+      <DependentUpon>UscitaPolitici.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ValutazioneBeni.xaml.cs">
+      <DependentUpon>ValutazioneBeni.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Vedi740Decurtata.xaml.cs">
+      <DependentUpon>Vedi740Decurtata.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Vedi740.xaml.cs">
+      <DependentUpon>Vedi740.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\MainPage.xaml">
+    <EmbeddedResource Include="Views\Start.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Views\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="Views\CrossChecking.xaml.cs">
+      <DependentUpon>CrossChecking.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Start.xaml.cs">
+      <DependentUpon>Start.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -92,6 +205,180 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CrossChecking.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Vedi740.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Vedi740Decurtata.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Figuriamoci.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\TastiACasaccio.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\AdobeSuite.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CheckMafiosi.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SequestroCapitali.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\RestituireBeni.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\TuttoOnline.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\UscitaPolitici.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\NoPassaporti.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\RifarePassaporti.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\RiprovaUscita.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\NonVero.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\InveceSi.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\InveceNo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Last.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\DecurtamentoSVG4.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ChiamaTecnici.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\AllertaUffici.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PostoGiusto.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\AnonimatoGarantito.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MeravigliosoCrossChecking.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\RitiroPassaporti.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ValutazioneBeni.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\FanculoComplotto.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SottoControllo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\OcchialiETuta.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.1.114\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.1.114\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
